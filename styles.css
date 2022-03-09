@@ -1,4 +1,10 @@
+#main {
+    height: 2000px;
+    padding: 0px;
+}
+
 #container {
-    background: url('images/bg_landing_page.jpg') no-repeat;
+    background: url('./images/bg_landing_page.jpg') no-repeat;
     background-size: cover;
+    height: 30%;
 }
