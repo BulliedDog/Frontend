@@ -14,19 +14,154 @@
 <body>
     <div id="main" class="container-fluid">
         <div id="header">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
-                Bootstrap
+                <a id="logo1" href="#">
+                    <img style="margin-top: 10px;" src="images/logo1.png" width="60" height="70" class="" alt="">
                 </a>
-            </nav>
+                <div id="nav_links">
+                    <a class="nav-item justify-end" href="#">News</a>
+                    <a class="nav-item justify-end" href="#">Products</a>
+                    <a class="nav-item justify-end" href="#">About</a>
+                </div>
         </div>
 
         <div id="container" class="col">
-            <div class="row">
-                <div class="col"></div>
+            <div id="card">
+                <p style="font-weight: 800;">Lorem ipsum</p>
+                <h1 style="font-weight: 800; color: #F2594B;">Suspendisse blandit sollicitudin enim, a sagittis consectetur.</h1>
+                <p>Class aptent taciti sociosqu ad litora torquen.</p>
+            </div>
+        </div>
+
+        <div id="container_cards">
+            <p style="font-weight: 800;">Lorem ipsum</p>
+            <h1 style="font-weight: 800; color: #F2594B;">Ut laoreet posuere sem</h1>
+            <p>at viverra justo viverra sed</p>
+            <div id="card1">
+                <img style="margin-bottom: 20px;" src="images/blood1.png" alt="">
+                <h2 style="font-weight: 800; color: #F2594B;">Pellentesque</h2>
+                <p>fermentum augue eget erat egestas pretium</p>
+            </div>
+            <div id="card2">
+                <img style="margin-bottom: 20px;" src="images/blood2.png" alt="">
+                <h2 style="font-weight: 800; color: #F2594B;">Pellentesque</h2>
+                <p>Aenean posuere neque ante</p>
+            </div>
+            <div id="card3">
+                <img style="margin-bottom: 20px;" src="images/blood3.png" alt="">
+                <h2 style="font-weight: 800; color: #F2594B;">Pellentesque</h2>
+                <p>Nam malesuada ac massa id accumsan</p>
+            </div>
+        </div>
+
+        <div id="container_text1">
+            <h1 id="container_text1_h1"  style="font-weight: 800; color: #F2594B;">Suspendisse potenti fusce accumsan</h1>
+            <p id="container_text1_p">Pellentesque fermentum augue eget erat egestas pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc lobortis eros ut magna dignissim tristique. Aenean posuere neque ante, lobortis eleifend turpis vulputate nec. Nam malesuada ac massa id accumsan. Donec ullamcorper purus eget nibh convallis rhoncus. Donec feugiat risus at erat sollicitudin, nec laoreet tortor tempor. Sed vitae rutrum tellus. Pellentesque quis ligula turpis. Sed maximus faucibus arcu luctus venenatis.</p>
+        </div>
+
+        <div id="container_text2">
+            <p id="container_text2_p1" style="font-weight: 800">Maecenas eleifend,</p>
+            <h1 id="container_text2_h1" style="font-weight: 800; color: #F2594B;">Quisque porttitor nunc elit. </h1> 
+            <p id="container_text2_p2">Maecenas eleifend, magna vitae volutpat ultricies, est nibh volutpat sapien, ac malesuada urna arcu euismod leo. Maecenas convallis nisl erat, ac dignissim velit ornare sit amet. Suspendisse mattis, urna et finibus consectetur, nisl arcu sodales sem, quis tristique ex lacus ac risus. Donec odio ipsum, mollis feugiat vestibulum eget, posuere sit amet erat. Quisque porttitor nunc elit. Mauris nec nisl faucibus, semper erat eget, feugiat velit.</p>
+            <p id="container_text2_p3">Ut nec ullamcorper odio. Sed in ultrices mauris. Pellentesque sit amet urna eget erat lobortis rutrum. Fusce ut est est. In condimentum vestibulum diam at lobortis.</p>
+        </div>
+
+        <div style="height: 5px; background-color: #F25757;"></div>
+
+        <div id="footer">
+            <div id="footer_text1">
+                <img src="images/logo2.png" alt="">
+            </div>
+
+            <div id="footer_text2">
+                <p>CONTATTI <br>
+                Tel. +39 542 345123<br>
+                Fax +39 02 2345344<br>
+                info@company.it</p>
+            </div>
+
+            <div id="footer_text3">
+                <p>SOCIAL</p>
+                <img src="images/f.png" alt="">
+                <img style="margin-left:10px;" src="images/l.png" alt="">
+                <img style="margin-left:10px;" src="images/t.png" alt="">
+            </div>
+
+            <div id="footer_text4">
+                <p><b>Lorem SpA</b><br>
+                    Via Rossi, 42 SP 23 Km 1.300<br>
+                    0000 Milano (Mi) ITALY</p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <div id="copyright_text1">
+                <p>© copyright 2022 Lorem SpA</p>
+            </div>
+
+            <div id="copyright_text2">
+                <p>Privacy</p>
+            </div>
+
+            <div id="copyright_text3">
+                <p>Cookie</p>
+            </div>
+
+            <div id="copyright_text4">
+                <p>Termini e condizioni</p>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    $(window).resize(function() {
+        var larghezza = $(window).width();
+        if (larghezza <= 700) {
+            document.getElementById('header').innerHTML = `<!--Navbar-->
+<nav class="navbar navbar-light light-blue lighten-4">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#"><img style="margin-top: 10px;" src="images/logo1.png" width="60" height="70" class="" alt=""></a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->`;
+console.log('testtttttt');
+        } else {
+            document.getElementById('header').innerHTML = `<a id="logo1" href="#">
+                    <img style="margin-top: 10px;" src="images/logo1.png" width="60" height="70" class="" alt="">
+                </a>
+                <div id="nav_links">
+                    <a class="nav-item justify-end" href="#">News</a>
+                    <a class="nav-item justify-end" href="#">Products</a>
+                    <a class="nav-item justify-end" href="#">About</a>
+                </div>`;
+        }
+        console.log('controllo larghezza schermo');
+    });
+</script>
